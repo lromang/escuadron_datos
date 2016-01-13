@@ -1,14 +1,21 @@
+##---------------------------------
 ## Código que revisa que el formato de los datos sea el correcto.
 suppressPackageStartupMessages(library(lubridate))
 suppressPackageStartupMessages(library(plyr))
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(xlsx))
+##---------------------------------
+
+
+##---------------------------------
 ## Funciones
 ##---------------------------------
+
 ####################################
 #############FECHAS#################
 ####################################
+
 ##---------------------------------
 ## prob.date
 ##---------------------------------
@@ -79,9 +86,11 @@ check.date <- function(df, thresh = .7){
                       )
     results
 }
+
 ####################################
 ###########COORDENADAS##############
 ####################################
+
 ##---------------------------------
 ## prob.coord
 ##---------------------------------
